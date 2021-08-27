@@ -1,0 +1,19 @@
+{
+    "name": "zamariolo/linearregressionwithphp",
+    "description": "Generates random data with php and apply a linear regression on them",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Zamariolo\\Linearregressionwithphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zamariolo",
+            "email": "30295966+Zamariolo@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "rubix/ml": "^1.2"
+    }
+}

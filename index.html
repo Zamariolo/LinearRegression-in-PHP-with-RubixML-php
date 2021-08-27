@@ -3,25 +3,47 @@
 <meta charset="UTF-8">
 <title>Linear Regression with PHP</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<script src=""></script>
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
 
 <body>
 <center>
 
 <h1 class="titulo">Linear Regression with php</h1>
 
-<p>1. Insert the equation line parameters to create data with noise;</p>
-
+<h3>Instructions</h3>
 <ol>
     <li>Insert the parameters line equation that you expect to create;</li>
+    <li>Specify the data quantity</li>
     <li>Click on the first button to create data with noise;</li>
     <li>Click on the second button to apply a linear regression model and plot the line;
 </ol>
 
+<h4>Expected equation:</h4>
+<p class="equation">y = <span><input type="number" id="input_a"></span> X + <span><input type="number" id="input_b"></span></p>
 
+<div>
+    <h4>Data quantity: <span><input type="number" id="input_dataQuantity"></span></h4>
+</div>
+
+<!--  Div dos botoes -->
+<div>
+    <button class="btn" id="btn_generateData">Generate data</button>
+    <button class="btn" id="btn_linearRegression">Adjuste line</button>
+</div>
+
+<div id="div_results">
+</div>
+
+<div id="chart_regression"></div>
 
 </center>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+<script src="js/generateData.js"></script>
+<script src="js/apexcharts.min.js"></script>
 
 </body>
 </html> 
